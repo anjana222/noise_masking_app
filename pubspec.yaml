@@ -1,0 +1,26 @@
+name: noise_masking_app
+description: A Flutter app for real-time noise masking using AI.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audio_streamer: ^4.1.1  # Updated to the version that works for you
+  tflite_flutter: ^0.9.0
+  audioplayers: ^2.0.0
+  permission_handler: 11.3.1
+  ffi: ^2.1.3
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/model.tflite  # Ensure you have a model in the 'assets' folder
